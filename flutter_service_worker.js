@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "8334da9fb6b91332cecd42fffa1d838c",
+  "assets/AssetManifest.json": "a72fe46a1f64f83cb1eb131159a763d1",
 "assets/assets/images/amulet.png": "a68aa9711d41a4ddb0450d56701f9fa1",
 "assets/assets/images/attack_decal.png": "39f6fa0b91504a368742570a9df91fa9",
 "assets/assets/images/backpack.png": "9a8f5976edb0e82feaf7bf8e32fce8b5",
@@ -31,8 +31,12 @@ const RESOURCES = {
 "assets/assets/images/door_closed.png": "4edfe04e173b93c7fa7e1c119caa0aa9",
 "assets/assets/images/door_open.png": "0b59a7ab6b93b7212e7342df80d38031",
 "assets/assets/images/druid.png": "c4615128c0e53549357d77a8af177736",
+"assets/assets/images/earth_orb.png": "0ac694481b76adfdfdafdbc14df015db",
+"assets/assets/images/earth_orb_bg.png": "512a04fff5f1e087e3b45fc29b102be3",
 "assets/assets/images/elf_archer.png": "d59782d3608a9269ca38e7ec18955004",
 "assets/assets/images/fire_mage.png": "8efb6b660c5512459f2d97b62cfffe2f",
+"assets/assets/images/fire_orb.png": "a8d86db913810d59aa87d635a43cde9b",
+"assets/assets/images/fire_orb_bg.png": "917f7bd7a5ed8ae670947016f79e2cb4",
 "assets/assets/images/fire_spirit.png": "ccfddb26451609ea545148274410c42b",
 "assets/assets/images/fountain.png": "b763fba62ae4f81df03eb8a6ff975a1e",
 "assets/assets/images/frozen.png": "5373c513b6245d5e49023c0584f005b3",
@@ -68,6 +72,8 @@ const RESOURCES = {
 "assets/assets/images/shield.png": "524e2e71b5ef9169adc8d9a71245f3ac",
 "assets/assets/images/shield_block.png": "70216e578dcc80cd14ab70dcaa5f3c23",
 "assets/assets/images/skeleton.png": "66510d9e30187ef1b27bb484d0c041fe",
+"assets/assets/images/sky_orb.png": "30fb1729d57a7609031c148051139dde",
+"assets/assets/images/sky_orb_bg.png": "12c0f6b610a30df96bd2f13eb58a9bc8",
 "assets/assets/images/slime.png": "316b4f58cfce2141ac70817c57945e0b",
 "assets/assets/images/Sprite-0001.aseprite": "ba04735a6660512a616092d5c31a3b9a",
 "assets/assets/images/staff.png": "24b9a8c7cc3213f37586e48ff39eee9d",
@@ -94,7 +100,7 @@ const RESOURCES = {
 "assets/assets/images/status_venom_tipped.png": "52e11a46956d999c99fc9b04086b430b",
 "assets/assets/images/status_weak.png": "ecb0a3e54bc9ef4110b99f3fce752291",
 "assets/assets/images/talisman.png": "bcdb5f76c4acf8140ca216bb12d607e6",
-"assets/assets/images/tiles.png": "fcd5e4d2e299dd07e2e1129aaba9b5d1",
+"assets/assets/images/tiles.png": "ae5c43aa878cebbb3d77e94a5dce7ffc",
 "assets/assets/images/torch.png": "376d612839a38ecb79d82a946fefeb24",
 "assets/assets/images/venus_plant.png": "70b79a996a355b30a4d6e7c34b7b66cf",
 "assets/assets/images/wall_bottom.png": "978bc59537d93cb96b2d7906e67d5c64",
@@ -107,16 +113,18 @@ const RESOURCES = {
 "assets/assets/images/wall_top_right.png": "13468f2017f5e7a73f55feb3c1e95028",
 "assets/assets/images/warrior.png": "cf77250a8392b2329161e31f831e5aa4",
 "assets/assets/images/water_mage.png": "6a0825191d2f7657f0f2155b7b1c379a",
+"assets/assets/images/water_orb.png": "61e0a1264b6b6c951077575a563b87f6",
+"assets/assets/images/water_orb_bg.png": "520faa7f35510348e08672d103263978",
 "assets/assets/images/wolf.png": "bccf5bcc63bd1660e47dfeeaf38fd35a",
 "assets/FontManifest.json": "3020802906dc520f88ca973c65aa46d8",
-"assets/NOTICES": "3ba6408be63d77b8f548a9cfc0b60f5c",
+"assets/NOTICES": "ea7665c2f52ed0bca36c38ac31643136",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "bd1593e97836721287663aeb1076fb31",
-"/": "bd1593e97836721287663aeb1076fb31",
-"main.dart.js": "b9c727685d2721babc3cf6f5b65d18a1",
+"index.html": "97b8bb3ed1267cbf476f30a395a5f820",
+"/": "97b8bb3ed1267cbf476f30a395a5f820",
+"main.dart.js": "371b10847eb5ee4a60ae29ddad76259f",
 "manifest.json": "58b20f613faa46c747c6f47aad95db63",
 "version.json": "ec6e89ebc62a1b1e40ff8d1f903f8330"
 };
@@ -136,7 +144,7 @@ self.addEventListener("install", (event) => {
   return event.waitUntil(
     caches.open(TEMP).then((cache) => {
       return cache.addAll(
-        CORE.map((value) => new Request(value + '?revision=' + RESOURCES[value], {'cache': 'reload'})));
+        CORE.map((value) => new Request(value, {'cache': 'reload'})));
     })
   );
 });
