@@ -3,9 +3,11 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "afff719edc446e2c03fffb9420b2d1c2",
+  "assets/AssetManifest.json": "a8695e59c20fb6b58dfe581027b17bb4",
+"assets/assets/images/alchemist.png": "47e5cd6ed1a6b737e7235c5cfe361fd7",
 "assets/assets/images/amulet.png": "a68aa9711d41a4ddb0450d56701f9fa1",
 "assets/assets/images/antidote_vial.png": "66c1a4de52e5fbe5b76d5a21ce0259b7",
+"assets/assets/images/any_orb_bg.png": "8504f9c62b2e02139863e82d1699ac93",
 "assets/assets/images/attack.png": "35b547cca11c19cea47c28b2e6a61a8c",
 "assets/assets/images/attack_decal.png": "39f6fa0b91504a368742570a9df91fa9",
 "assets/assets/images/backpack.png": "9a8f5976edb0e82feaf7bf8e32fce8b5",
@@ -126,9 +128,12 @@ const RESOURCES = {
 "assets/assets/images/status_formation.png": "ae13905d698892233eee7f0ebd8e9c87",
 "assets/assets/images/status_fragile.png": "f237b42934e7609085f2e0cf7d3b5cb2",
 "assets/assets/images/status_frozen.png": "606914a5b9c3b5f14551ffe8146b539d",
+"assets/assets/images/status_iron_skin.png": "a8b3b3440b9f10b2ecdf331420563d3d",
 "assets/assets/images/status_magma_orb.png": "66b1254e45de064d2234e0bf7447d893",
+"assets/assets/images/status_oily.png": "2719d93b26a71ae635319494fbf7f8ca",
 "assets/assets/images/status_parry.png": "60f696cb792383aa95fb5eeb0aaa90a9",
 "assets/assets/images/status_persist_block.png": "1041bf56c70b178545016c8fb43ee2c5",
+"assets/assets/images/status_planty.png": "fa5a6907d906e602dfd11d02be8fac92",
 "assets/assets/images/status_poison.png": "daf2cbe236edea49536382eb91653da2",
 "assets/assets/images/status_prolonged_infection.png": "ec7c3cc6a0366ef60592798598936e2e",
 "assets/assets/images/status_rot.png": "7480adcb363607d2736ad1fcf65f922f",
@@ -172,9 +177,9 @@ const RESOURCES = {
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
-"index.html": "67bd1bb83fe9001d1f293afc396d0a46",
-"/": "67bd1bb83fe9001d1f293afc396d0a46",
-"main.dart.js": "11fe3cb2010e5b41371cac2a6060a096",
+"index.html": "fd8749beb6e344adfb24bf5dacaaf29e",
+"/": "fd8749beb6e344adfb24bf5dacaaf29e",
+"main.dart.js": "bb120d40baf1220602b37471625293d4",
 "manifest.json": "58b20f613faa46c747c6f47aad95db63",
 "version.json": "6df13856f91607f504c1e0412de3d75c"
 };
